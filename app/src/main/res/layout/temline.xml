@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="七天天气走势"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp" />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24小时预报"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart_hourly"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp" />
+
+
+</LinearLayout>
